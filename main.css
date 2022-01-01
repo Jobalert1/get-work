@@ -1,0 +1,507 @@
+*
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+    }
+
+.menu-bar nav
+    {
+        background-image: linear-gradient(to left, #7ce08a, #93c8ee);
+
+    }
+
+.nav-link
+    {
+        font-size: 16px;
+        color: #fff !important;
+        margin: 2px;
+    }
+
+.navbar-nav
+    {
+        text-align: right;
+    }
+
+.menu-bar .navbar-toggler
+    {
+        padding-right: 0;
+        outline: none;
+        border: none;
+    }
+
+.logo
+   {
+       max-width: 80px
+   }
+/*----------------------banner--------------------*/
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #5fcf80;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+
+.preloader-img{
+    max-width: 120px;
+    border: 1px solid #5fcf80;
+    border-radius: 5px;
+}
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 1 !important;
+    }
+  }
+  
+.banner
+    {
+        height: 80vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/business.png);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+
+.banner h1
+    {
+        padding-top: 170px;
+        font-size: 50px;
+        letter-spacing: 6px;
+        font-weight: 600;
+        text-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    
+/*----------------------JOB FORM--------------------*/
+
+.search-job
+    {
+        padding: 30px 0;
+        margin: -50px 6% 50px;
+        background-image: linear-gradient(to left, #7ce08a, #93c8ee);
+
+    }
+
+.search-job .form-control
+    {
+        max-width: 250px;
+        display: inline-flex;
+        margin: 10px 5px;
+        box-shadow: none !important;
+        border-radius: 0;
+        border: none !important;
+    }
+
+.search-job .btn-success
+    {
+        box-shadow: none !important;
+        border-radius: 0;
+        border: none !important;
+        display: inline-flex;
+        padding: 5px 20px;
+        margin: 5px;
+    }
+
+.search-job .job-a:hover
+    {
+        text-decoration: none;
+    }
+    
+/*----------------------TOP RECRUITERS------------------*/
+
+#recruiters
+    {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+h3
+    {
+     text-align: center;
+     padding-bottom: 40px;
+    }
+
+h3::before
+    {
+        content: '';
+        background-image: linear-gradient(to left, #7ce08a, #93c8ee);
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        z-index: -10;
+        margin-top: -15px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 90px;
+    }
+
+#recruiters img
+    {
+       max-width: 100px;
+       margin: 10px 20px;
+    }
+
+    /*------------------JOBS---------------*/
+#jobs
+    {
+       background: #f8f8fa;
+       padding: 50px 0;
+    }
+
+.company-details
+    {
+        box-shadow: 0 2px 70px 0 rgba(110, 130, 108, .18);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .company-details small
+    {
+        font-size: 22px;
+        color: #000000;
+    }
+.job-updates
+    {
+        background: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+.job-updates .fa
+    {
+        margin-top: 5px;
+        margin-right: 10px;
+        color: #77d1b1;
+    }
+
+.job-updates small
+    {
+        background: #efefef;
+        padding: 1px 5px;
+        margin: 0 5px;
+    }
+
+.job-updates p
+    {
+        margin-bottom: 0 !important;
+    }
+
+.apply-btn
+    {
+        height: 40px;
+        background-image: linear-gradient(to left, #7ce08a, #93c8ee);
+        padding: 7px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+.apply-btn .btn-primary
+    {
+        padding: 0 30px;
+        float: right;
+        border-radius: 0;
+        box-shadow: none !important;
+        background: transparent;
+        border: 1px solid #fff;
+    }
+
+.pagenation li
+    {
+       height: 25px;
+       width: 25px;
+       list-style: none;
+       display: inline-block;
+       cursor: pointer;
+    }
+
+.pagenation li:hover, #active
+    {
+        color: #fff;
+        background-image: linear-gradient(to left, #7ce08a, #93c8ee);
+        text-align: center;
+    }
+
+.pagenation a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.left-arrow
+    {
+        color: #999;
+    }
+
+.left-arrow
+    {
+        color: #29b929;
+    }
+
+/*-------------------------SITE STAT------------------*/
+
+#site-stat
+    {
+        padding: 100px 0;
+    }
+
+#site-stat h3
+    {
+        margin-bottom: 30px;
+    }
+
+.stats-box
+    {
+        padding: 30px;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 2px 40px 0px rgba(110, 130, 108, .18);
+    }
+
+.stats-box .fa
+    {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+/*--------------------------App Banner------------------*/
+
+#app-banner
+    {
+       padding: 50px 0; 
+       background-image: linear-gradient(to left, #7ce08a, #93c8ee);
+    }
+
+#app-banner h1
+    {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 45px
+    }
+
+#app-banner img
+    {
+      width: 150px;
+      margin: 50px 0;  
+    }
+
+
+
+    /* ------------------companies page -----------------*/
+#top-companies
+    {
+        background: #f8f8fa;
+        padding: 50px 0;
+    }
+#top-companies img
+    {
+        max-width: 300px;
+    }
+
+.companiy-details
+    {
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 40px 0px rgba(110, 130, 108, .18);
+    }
+
+    /*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+    padding: 30px 0;
+  }
+  .counts .counters span {
+    font-size: 48px;
+    display: block;
+    color: #5fcf80;
+    font-weight: 700;
+  }
+  .counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #37423b;
+  }
+
+  /*-------------------------BENEFITS PAGE -----------------*/
+#benefits
+  {
+      padding: 50PX 0;
+  }
+
+#benefits h2
+{
+    color: #85e4a1;
+    font-weight: 600;
+}
+
+#benefits .fa{
+    color: #77d1b1;
+}
+
+.incentive
+   {
+       box-shadow: 0 20px 10px 0px rgba(110, 130, 108, .18);
+       padding: 20px;
+       margin-top: 5%;
+   }
+
+.incentive img
+   {
+       max-width: 300px;
+       border-radius: 5px;
+   }
+
+.incentive small
+   {
+       font-size: 15px;
+       font-weight: bold;
+   }
+
+.incentive .fa
+   {
+       font-size: 30px;
+       color: seagreen;
+       margin-left: 10px;
+   }
+ 
+   /* DUBAI LIFESTYLE */
+
+#dubai
+   {
+    padding: 50PX 0;
+   }
+
+#dubai img
+   {
+    max-width: 400px;
+    border-radius: 5px;
+   }
+
+#dubai p
+  {
+      padding-top: 10px;
+  }
+
+.achievement
+   {
+       margin-bottom: 20px;
+   }
+
+.achievement a
+{
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+    /*--------------FOOTER---------------------------------------*/
+
+#footer
+    {
+        background: #f8f8fd;
+        padding: 20px 10px 8px;
+    }
+
+.footer-logo
+    {
+        margin: 30px 0;
+        max-width: 120px;
+    }
+
+#footer p
+    {
+        color: #333;
+    }
+
+
+#footer a img
+    {
+        width: 50px;
+        transition:  1s;
+    }
+
+
+#footer a img:hover
+    {
+        transform: translateY(-10%);
+    }
+
+
+.fa-heart
+    {
+        color: red;
+    }
+
+hr
+    {
+        background-color: #ccc;
+    }
+
+#footer p a
+    {
+       text-decoration: none;
+       color: #333;
+    }
+
+@media screen and (max-width: 768px) 
+{
+    .incentive img
+   {
+       max-width: 350px;
+       border-radius: 5px;
+   }
+
+   .banner h1
+    {
+        font-size: 30px;
+    }
+
+}
